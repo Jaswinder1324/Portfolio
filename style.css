@@ -1,0 +1,151 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #00bdff, #06516c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header h1{
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+section{
+    margin-bottom: 20px;
+}
+
+section h2{
+    font-size: 1.8rem;
+    color: blue;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+section p,ul
+{
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0%;
+}
+
+ul li{
+    padding: 10px;
+    background-color: #f3f4f6;
+    color: black;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+ul li i{
+    margin-right: 5px;
+}
+
+ul li:hover{
+    background-color: #e0e0e0;
+}
+
+ul li a{
+    color: black;
+}
+
+ul li a:hover{
+    color: blue;
+}
+
+button{  
+    background: linear-gradient(135deg, #00bdff, #0087ff);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 12px 24px;
+    border-radius: 10px;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: transform 0.5s ease, background 1s ease;
+}
+
+button:hover{
+    transform: scale(1.2);
+    background: linear-gradient(135deg, #0087ff, #00bdff);
+}
+
+#fact{
+    margin-top: 15px;
+    color: blue;
+    font-style: bold;
+}
+
+#fun-fact p{
+    transition: transform 0.5s ease;
+}
+#fun-fact p:hover{
+    color: blueviolet;
+    transform: scale(1.2);
+}
+
+#profile-picture
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+#profile-picture img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid blue;
+    transition: transform 0.5s ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#profile-picture img:hover
+{
+    transform: scale(1.2);
+}
+
+.container
+{
+    background-color: white;
+    margin-top: 10px;
+    width: 90%;
+    text-align: center;
+    border-radius: 15px;
+    animation: fadeIn 1s ease-in;
+    max-width: 600px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+@keyframes fadeIn 
+{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
